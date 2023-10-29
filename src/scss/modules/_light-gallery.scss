@@ -1,0 +1,70 @@
+.l-home-gallery {
+  // direction: ltr;
+}
+
+#animated-thumbnails-gallery {
+  a {}
+}
+
+
+.gallery-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  position: relative;
+  width: calc(50% - 10px);
+  overflow: hidden;
+  margin-block-end: 1rem;
+  margin-inline: 5px;
+  border-radius: 0;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, .1);
+
+  &:hover {
+    img {
+      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, .4)) brightness(0.6);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.gallery-column__title{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  color: #fff;
+  padding: 1em .5em;
+  font-size: rem(18);
+  margin: 0;
+}
+
+.gallery-column img {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+  @include transition();
+
+}
+
+.gallery-row {
+  img {
+    height: 300px;
+  }
+}
+
+.lg-outer {
+  direction: ltr;
+}
+
+// .lg-outer .lg-item,
+// .lg-outer .lg-img-wrap {
+//   margin-top: 15vh;
+// }

@@ -1,0 +1,138 @@
+.header {
+    background-image: url(../images/icons/header-bg.svg);
+    background-position: 0 0;
+    width: 100%;
+    background-position-x: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.header .icon-svg {
+
+    &:hover {
+        background: none;
+
+        >svg {
+            fill: $header-color;
+
+        }
+    }
+
+    >svg {
+        fill: $header-color;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding-#{$end}: 5px;
+    }
+}
+
+.top-menu {
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-#{$end}: 10px;
+
+    .top-menu_date {
+
+        padding-top: 0.7rem;
+        display: flex;
+        align-items: start;
+
+        span {
+            color: $header-color;
+            font-size: 0.8rem;
+            padding-top: 0.2rem;
+        }
+    }
+}
+
+
+.top-menu_links {
+    display: flex;
+    border-bottom: 1px solid rgba($header-color, .25);
+
+    ul {
+
+        padding-top: 0.8rem;
+        padding-#{$start}: 20px;
+        padding-#{$end}: 0;
+        margin-bottom: 0;
+
+        li {
+            margin-#{$end}: 20px;
+            display: inline-block;
+
+            a {
+                font-size: 0.8rem;
+                color: $header-color;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+            fill: $header-color;
+            margin-#{$end}: 5px;
+        }
+    }
+
+    .btn {
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+
+        &:hover {
+            opacity: 0.9;
+            color: $header-color;
+        }
+    }
+}
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // position: absolute;
+    // #{$start}: 10em;
+    // z-index: 12;
+
+    figure {
+        img {
+            width: 100%;
+            image-rendering: pixelated;
+            filter: brightness(0.5);
+        }
+    }
+}
+
+.lang-button {
+    margin-#{$start}: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: .8rem;
+    @include transition();
+
+    svg {
+        @include transition();
+        width: 22px;
+        height: 22px;
+    }
+    
+    span {
+        margin-inline-end: 4px;
+    }
+
+    &:hover {
+        color: $color-primary;
+
+        svg {
+            fill: $color-primary;
+            transform: rotatez(90deg);
+        }
+    }
+}

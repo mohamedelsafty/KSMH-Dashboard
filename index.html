@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSMH</title>
+    <!-- <link rel="stylesheet" href="./src/css/aos.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/calendar.css">
+    <link rel="stylesheet" href="src/css/style.en-US.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="row mx-0">
+            <div class="logo col-md-3">
+                <figure>
+                    <a href="/"><img src="./src/images/logo-img.png" alt="KSMH"></a>
+                </figure>
+            </div>
+            <div class="col col-md-9 navBar-navWrapper">
+                <div class="top-menu">
+                    <div class="top-menu_links">
+                        <div class="top-menu_date">
+                            <div class=" icon-svg">
+                                <svg>
+                                    <use xlink:href="./src/images/svg-icons.svg#icon-calender"></use>
+                                </svg>
+                            </div>
+                            <span>20 يونيو 2022</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./src/images/svg-icons.svg#icon-reports"></use>
+                                    </svg>
+                                    <span>System</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./src/images/svg-icons.svg#icon-dashboard"></use>
+                                    </svg>
+                                    <span>Media Center</span>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12zM7 9h2v2H7zm8 0h2v2h-2zm-4 0h2v2h-2z" />
+                                    </svg>
+                                    <span>SMS Services</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./src/images/svg-icons.svg#icon-folder-open"></use>
+                                    </svg>
+                                    <span>Document Shreing</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                                    </svg>
+                                    <span>Alerts</span>
+                                </a>
+                            </li>
+                            <li class="mr-1 m-0">
+                                <div class="search">
+                                    <a href="#" id="search-icon">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="./src/images/svg-icons.svg#icon-search"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="search-content is-hidden">
+                                        <input type="search" name="search" placeholder="البحث ..." />
+                                        <a href="#" class="btn btn-search">
+                                            <use xlink:href="./src/images/svg-icons.svg#icon-search"></use>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="top-menu_buttons d-flex mr-3">
+                        <!-- <a href="#" class="button button--radius button--outline button--light">
+                            الخدمات الالكترونية
+                        </a> -->
+                        <a href="#" class="lang-button">
+                            <span>English</span>
+                            <svg class="lang">
+                                <use xlink:href="./src/images/svg-icons.svg#icon-lang"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-menu justify-content-between mt-4">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#0" class="active">NOTIFICATION</a></li>
+                            <li><a href="#0">ELECTRONIC SERVICES</a></li>
+                            <li><a href="#0">SERVICES</a>
+                                <!-- <ul class="dropdown">
+                                    <li>
+                                        <a href="#">
+                                            <span class="item__title">نظام موعد</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="item__title">بنك الدم</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="item__title">نظام احالتي</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="item__title">نظام أداء</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="item__title">نظام الأرشفة</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="item__title">نظام الدعم الفني</span>
+                                        </a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li><a href="#0">HOTLINE</a></li>
+                            <li><a href="#0">DEPARTMENT</a></li>
+                            <li><a href="#0">E-MAIL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main class="main-wrapper">
+        <div class="row mx-0">
+            <div class="col col-md-3 bg-light">
+                <div class="user-profile">
+                    <div class="user-info">
+                        <figure class="user__image">
+                            <img src="./src/images/user-img.png" alt="عبد الله بن عبد الرحمن">
+                        </figure>
+                        <h2 class="user__name mt-2 mb-2 text-center">Dr.HassanMohammad</h2>
+                        <h3 class="user__position mt-2 mb-2 text-center">Doctor</h3>
+                        <!-- <div class="user__department mt-2 mb-2">إدارة تقنية المعلومات</div> -->
+                        <div class="mt-3">
+                            <span class="typo--dark"> Time in : </span>
+                            <strong class="typo--priamry"> 7:30 am</strong>
+                        </div>
+                        <div class="mt-2 mb-2">
+                            <span class="typo--dark"> Time out : </span>
+                            <strong class="typo--priamry"> 4:30 pm</strong>
+                        </div>
+                        <div class="mt-2 mb-5">
+                            <span class="typo--dark"> Leave Balance : </span>
+                            <strong class="typo--secodary"> 25</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb3">
+                    <div class="user__department text-center mt-3 mb-2">KSAFH Community Center</div>
+                    <img src="/src/images/community.jpg" class="img-fluid mb-3" alt="">
+                </div>
+                <div class="mb3">
+                    <div class="user__department text-center mt-3 mb-2">Research and Development</div>
+                    <img src="/src/images/research.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="mb3">
+                    <div class="user__department text-center mt-3 mb-2">KSAFH Staff Transport</div>
+                    <img src="/src/images/transportaion.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col col-md-9 mb-4">
+
+                <div class="mt-4">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <hgroup data-aos="fade-up" data-aos-duration="800"
+                                data-aos-easing="cubic-bezier(0.88, 0.9, 0.9, 0.96)"
+                                class="section-title section-title--between">
+                                <h4 class="typo-headline section-title__main-title">News</h4>
+                                <a class="link-details link-details--outline link-details--primary" href="#">
+                                    <strong>All News</strong>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                    </svg>
+                                </a>
+                            </hgroup>
+                            <article class="news-slider swiper-container" id="news-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a class="l-card l-card--home" href="#">
+                                            <div class="l-card__img"><img src="./src/images/news2.jpg"
+                                                    alt="news-slider" /></div>
+                                            <div class="l-card__content">
+                                                <div class="l-card__date"><svg viewBox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+                                                    </svg> <span>30/05/2020</span>
+                                                </div>
+                                                <div class="l-card__title">
+                                                    His Highness the Emir of Tabuk receives the Director of the Islamic
+                                                    Affairs Branch
+                                                    in the region</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"> <a class="l-card l-card--home" href="#">
+                                            <div class="l-card__img"><img src="./src/images/news2.jpg"
+                                                    alt="news-slider" /></div>
+                                            <div class="l-card__content">
+                                                <div class="l-card__date"><svg viewBox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+                                                    </svg> <span>30/05/2020</span>
+                                                </div>
+                                                <div class="l-card__title">His Highness the Emir of Tabuk receives the
+                                                    Director of the
+                                                    Islamic Affairs Branch in the region</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide"> <a class="l-card l-card--home" href="#">
+                                            <div class="l-card__img"><img src="./src/images/news2.jpg"
+                                                    alt="news-slider" /></div>
+                                            <div class="l-card__content">
+                                                <div class="l-card__date"><svg viewBox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+                                                    </svg> <span>30/05/2020</span>
+                                                </div>
+                                                <div class="l-card__title">His Highness the Emir of Tabuk receives the
+                                                    Director of the
+                                                    Islamic Affairs Branch in the region</div>
+                                            </div>
+                                        </a></div>
+                                    <div class="swiper-slide"> <a class="l-card l-card--home" href="#">
+                                            <div class="l-card__img"><img src="./src/images/news2.jpg"
+                                                    alt="news-slider" /></div>
+                                            <div class="l-card__content">
+                                                <div class="l-card__date"><svg viewBox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+                                                    </svg> <span>30/05/2020</span>
+                                                </div>
+                                                <div class="l-card__title">His Highness the Emir of Tabuk receives the
+                                                    Director of the
+                                                    Islamic Affairs Branch in the region</div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <hgroup class="section-title section-title--between">
+                                <h3 class="typo-headline section-title__main-title">Hospital Director Message</h3>
+                            </hgroup>
+                            <div class="home-event-container">
+                                <div class="home-event home-event--boss aos-init aos-animate" data-aos="fade-left"
+                                    data-aos-duration="800" data-aos-easing="cubic-bezier(0.88, 0.9, 0.9, 0.96)"
+                                    data-aos-delay="150">
+                                    <figure class="home-event__img">
+                                        <img src="./src/images/event2.jpg" alt="" srcset="">
+                                    </figure>
+                                    <figcaption class="home-event__content">
+                                        <p class="home-event__title">Director name</p>
+                                        <p class="home-event__desc home-event__desc--11-line">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing
+                                            elit. Placeat consequuntur facere tempora dignissimos? Dolor ipsa nobis
+                                            repellendus facilis. Repudiandae suscipit assumenda neque corporis sunt qui
+                                            consequuntur placeat odio. Voluptatum, quia. Repudiandae suscipit assumenda
+                                            neque corporis sunt qui
+                                            consequuntur placeat odio. Voluptatum, quia. </p>
+                                        <a class="link-details link-details--primary" href="#">
+                                            <span>Contact</span>
+                                            <svg viewBox="0 0 24 24">
+                                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                            </svg>
+                                        </a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel__header">
+                            <h3 class="panel__title">
+                                Kpi
+                            </h3>
+                            <a class="link-details link-details--outline link-details--secondary" href="#">
+                                <strong>All Kpis</strong>
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="panel__body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <!-- <p class="panel__subtitle">
+                                        سأعرض مثال حي لهذا
+                                    </p> -->
+                                    <canvas id="KPiChart" width="100%" height="60"></canvas>
+                                </div>
+                                <div class="col-md-4">
+                                    <!-- <p class="panel__subtitle">
+                                        سأعرض مثال حي لهذا
+                                    </p> -->
+                                    <div>
+                                        <canvas id="KPiChart2" width="100%" height="115"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <hgroup class="section-title">
+                                <h4 class="typo-headline section-title__main-title">Memo</h4>
+                            </hgroup>
+                            <div class="panel panel--memo">
+                                <div class="memo-card">
+                                    <p class="memo-card__title">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="memo-card__date">
+                                        <svg class="memo-card__title">
+                                            <use xlink:href="./src/images/svg-icons.svg#icon-calender"></use>
+                                        </svg>
+                                        <span>07 jan 2022</span>
+                                    </p>
+                                </div>
+                                <div class="memo-card">
+                                    <p class="memo-card__title">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="memo-card__date">
+                                        <svg class="memo-card__title">
+                                            <use xlink:href="./src/images/svg-icons.svg#icon-calender"></use>
+                                        </svg>
+                                        <span>07 jan 2022</span>
+                                    </p>
+                                </div>
+                                <div class="memo-card">
+                                    <p class="memo-card__title">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="memo-card__date">
+                                        <svg class="memo-card__title">
+                                            <use xlink:href="./src/images/svg-icons.svg#icon-calender"></use>
+                                        </svg>
+                                        <span>07 jan 2022</span>
+                                    </p>
+                                </div>
+                                <div class="memo-card">
+                                    <p class="memo-card__title">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                    <p class="memo-card__date">
+                                        <svg class="memo-card__title">
+                                            <use xlink:href="./src/images/svg-icons.svg#icon-calender"></use>
+                                        </svg>
+                                        <span>07 jan 2022</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <hgroup data-aos="fade-right" data-aos-duration="800"
+                                data-aos-easing="cubic-bezier(0.88, 0.9, 0.9, 0.96)"
+                                class="section-title section-title--between aos-init aos-animate">
+                                <h3 class="typo-headline section-title__main-title">Events</h3>
+                                <a class="link-details link-details--outline link-details--primary" href="#">
+                                    <strong>All Events</strong>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                    </svg>
+                                </a>
+                            </hgroup>
+                            <div class="home-event-container">
+                                <div class="home-event aos-init aos-animate" data-aos="fade-left"
+                                    data-aos-duration="800" data-aos-easing="cubic-bezier(0.88, 0.9, 0.9, 0.96)"
+                                    data-aos-delay="100">
+                                    <figure class="home-event__img">
+                                        <img src="./src/images/event1.jpg" alt="" srcset="">
+                                    </figure>
+                                    <figcaption class="home-event__content">
+                                        <p class="home-event__title">Cancer awareness week</p>
+                                        <p class="home-event__date">07 jan 2022</p>
+                                        <p class="home-event__desc home-event__desc--2-line">October is Breast Cancer
+                                            Awareness Month, an annual
+                                            campaign to rai
+                                            se awareness about the awareness about the impact</p>
+                                        <a class="link-details link-details--primary" href="#">
+                                            <span>veiw details</span>
+                                            <svg viewBox="0 0 24 24">
+                                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                            </svg>
+                                        </a>
+                                    </figcaption>
+                                </div>
+                                <div class="home-event aos-init aos-animate" data-aos="fade-left"
+                                    data-aos-duration="800" data-aos-easing="cubic-bezier(0.88, 0.9, 0.9, 0.96)"
+                                    data-aos-delay="150">
+                                    <figure class="home-event__img">
+                                        <img src="./src/images/event2.jpg" alt="" srcset="">
+                                    </figure>
+                                    <figcaption class="home-event__content">
+                                        <p class="home-event__title">Cancer awareness week</p>
+                                        <p class="home-event__date">07 jan 2022</p>
+                                        <p class="home-event__desc home-event__desc--2-line">October is Breast Cancer
+                                            Awareness Month, an annual
+                                            campaign to rai
+                                            se awareness about the awareness about the impact </p>
+                                        <a class="link-details link-details--primary" href="#">
+                                            <span>veiw details</span>
+                                            <svg viewBox="0 0 24 24">
+                                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                            </svg>
+                                        </a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel__header">
+                            <h3 class="panel__title">
+                                Training Opperunities
+                            </h3>
+                        </div>
+                        <div class="panel__body">
+                            <div class="d-flex">
+                                <a href="#" class="brand-item">
+                                    <span></span>
+                                    <img src="./src/images/icons/huawei_logo.webp" alt="">
+                                </a>
+                                <a href="#" class="brand-item">
+                                    <span></span>
+                                    <img src="./src/images/icons/microsoft-logo.svg" alt="">
+                                </a>
+                                <a href="#" class="brand-item">
+                                    <span></span>
+                                    <img src="./src/images/icons/oracle-logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <hgroup data-aos="fade-right" data-aos-duration="800"
+                                data-aos-easing="cubic-bezier(0.88, 0.9, 0.9, 0.96)"
+                                class="section-title section-title--between aos-init aos-animate">
+                                <h3 class="typo-headline section-title__main-title">Academic calendar</h3>
+                            </hgroup>
+                            <div class="elegant-calencar d-md-flex">
+                                <div class="wrap-header d-flex align-items-center">
+                                    <p id="reset">reset</p>
+                                    <div id="header" class="p-0">
+                                        <div class="pre-button d-flex align-items-center justify-content-center"><i
+                                                class="fa fa-chevron-left"></i></div>
+                                        <div class="head-info">
+                                            <div class="head-day">1</div>
+                                            <div class="head-month">November - 2022</div>
+                                        </div>
+                                        <div class="next-button d-flex align-items-center justify-content-center"><i
+                                                class="fa fa-chevron-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="calendar-wrap">
+                                    <table id="calendar">
+                                        <thead>
+                                            <tr>
+                                                <th>Sun</th>
+                                                <th>Mon</th>
+                                                <th>Tue</th>
+                                                <th>Wed</th>
+                                                <th>Thu</th>
+                                                <th>Fri</th>
+                                                <th>Sat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="" class="">1</td>
+                                                <td id="" class="">2</td>
+                                                <td id="" class="">3</td>
+                                                <td id="" class="">4</td>
+                                                <td id="" class="">5</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="" class="">6</td>
+                                                <td id="" class="">7</td>
+                                                <td id="" class="">8</td>
+                                                <td id="" class="">9</td>
+                                                <td id="" class="">10</td>
+                                                <td id="" class="">11</td>
+                                                <td id="" class="">12</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="" class="">13</td>
+                                                <td id="" class="">14</td>
+                                                <td id="" class="">15</td>
+                                                <td id="" class="">16</td>
+                                                <td id="" class="">17</td>
+                                                <td id="" class="">18</td>
+                                                <td id="" class="">19</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="" class="">20</td>
+                                                <td id="" class="">21</td>
+                                                <td id="" class="">22</td>
+                                                <td id="" class="">23</td>
+                                                <td id="" class="">24</td>
+                                                <td id="" class="">25</td>
+                                                <td id="" class="">26</td>
+                                            </tr>
+                                            <tr>
+                                                <td id="" class="">27</td>
+                                                <td id="" class="">28</td>
+                                                <td id="" class="">29</td>
+                                                <td id="" class="">30</td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                                <td id="disabled" class=""></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <hgroup class="section-title">
+                                <h4 class="typo-headline section-title__main-title">New Arrival</h4>
+                            </hgroup>
+                            <div class="card card--shadow">
+                                <img src="./src/images/person.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title typo--dark">Dr.THOMASEDSON
+                                        ConsultantNeuro</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="d-flex">
+                        <div class="row">
+                            <div class="col-5">
+                                <a href="/#" class="main-footer__logo">
+                                    <img src="/src/images/logo-h.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="/#" class="main-footer__logo">
+                                    <img src="/src/images/vision-logo.svg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <ul class="main-footer__nav">
+                                    <li>
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Events</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <ul class="main-footer__nav">
+                                    <li>
+                                        <a href="">Media Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <ul class="main-footer__nav">
+                                    <li>
+                                        <a href="">Department</a>
+                                    </li>
+                                    <li>
+                                        <a href="">COVID 19</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Document Shreing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <ul class="main-footer__nav">
+                                    <li>
+                                        <a href="">System</a>
+                                    </li>
+                                    <li>
+                                        <a href="">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Electronic services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="./src/scripts/aos.js"></script> -->
+    <script src="./src/scripts/jquery-3.3.1-min.js"></script>
+    <script src="./src/scripts/calendar.js"></script>
+    <script src="./src/scripts/bootstrap.min.js"></script>
+    <script src="./src/scripts/swiper.min.js"></script>
+    <script src="./src/scripts/Chart.js"></script>
+    <script src="./src/scripts/scripts.js"></script>
+
+
+</body>
+
+</html>

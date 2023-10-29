@@ -1,0 +1,96 @@
+.l-card {
+ display: flex;
+ position: relative;
+ overflow: hidden;
+ color: #fff;
+ box-shadow: $card-shadow;
+
+ &--home {
+  min-height: 320px;
+ }
+
+ &:hover {
+  text-decoration: none;
+
+  img {
+   transform: scale(1.1);
+  }
+
+  .l-card__content {
+   transform: translateY(-10px);
+
+  }
+
+ }
+
+ &--round {
+  border-radius: 5px;
+ }
+}
+
+.l-card__img {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ z-index: -1;
+
+ &::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #00838d 15%, transparent 45%);
+  z-index: 0;
+ }
+
+ img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  @include transition;
+ }
+}
+
+.l-card__content {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ padding-inline: 10px;
+ padding-bottom: 0;
+ z-index: 1;
+ @include transition;
+}
+
+.l-card__date {
+ font-size: rem(14);
+ color: #fff;
+ display: flex;
+ margin-bottom: 1em;
+
+ svg {
+  width: 20px;
+  height: 20px;
+  fill: $color-white;
+  padding-inline-end: 4px;
+ }
+}
+
+.l-card__title {
+ font-size: rem(16);
+ font-weight: 400;
+ margin-bottom: 1em;
+ color: #fff;
+}

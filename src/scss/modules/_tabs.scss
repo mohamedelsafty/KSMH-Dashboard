@@ -1,0 +1,227 @@
+// ============ Style Tabs Section ======= //
+.tab-container {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px #0000000f;
+  margin-bottom: rem(18);
+  margin-top: rem(16);
+  padding: rem(16);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  @include transition();
+
+  &:hover {
+    // box-shadow: $shadow-hover;
+    cursor: pointer;
+  }
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &--mar {
+    margin-bottom: 15px;
+  }
+}
+
+.tab__logo {
+  width: 70px;
+  height: 58px;
+  opacity: 1;
+}
+
+.tabs-date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-group {
+  &--mar {
+    margin-bottom: 0;
+  }
+}
+
+.tabs-board {
+  .tab__img {
+    width: 300px;
+    height: 155px;
+  }
+}
+
+.tab-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.tab-menu ul li a {
+  font-size: rem(15);
+  font-weight: 300;
+  text-decoration: none;
+  color: $color-grey;
+  background-color: $color-grey;
+  padding: 5px 20px;
+  border-radius: 5px;
+
+  @include breakpoint(isCommon) {
+    font-size: rem(11);
+    padding: 3px 10px;
+  }
+}
+
+.tab-menu ul li a.active-a {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.tab {
+  display: none;
+}
+
+.tab h2 {
+  color: $color-grey;
+}
+
+.tab p {
+  color: $color-grey;
+  text-align: justify;
+}
+
+.tab-active {
+  display: block;
+}
+
+@include breakpoint(isMobile) {
+  .tabs-board {
+    flex: 0 0 calc(100% - 1rem);
+    flex-wrap: wrap;
+  }
+}
+
+@include breakpoint(isTablet) {
+  .tabs-board {
+    flex: 0 0 calc(50% - 1rem);
+    flex-wrap: wrap;
+  }
+}
+
+@include breakpoint(isCommon) {
+  .tab-scroll {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .tab-menu {
+    margin-top: 25px;
+  }
+}
+
+// .nav-pills .nav-link {
+//   margin-bottom: -1px;
+
+// }
+
+.nav-pills li:not(:last-child) .nav-link {
+  // border-#{$right}: 1px solid $color-primary;
+  border-#{$start}: 1px solid transparent;
+
+}
+
+.nav-pills {
+  border-bottom: none;
+  margin: 1em 0;
+  padding: 0;
+
+  .nav-link {
+    display: flex;
+    text-transform: capitalize;
+    align-items: flex-end;
+    border-radius: 0;
+    background-color: transparent;
+    background-color: #fff;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      min-height: 0;
+      // top: 0;
+      #{$start}: 0;
+      #{$end}: 0;
+      bottom: 0;
+      background-color: $color-primary;
+      z-index: 0;
+      @include transition;
+    }
+
+    span {
+      font-size: rem(16);
+      margin-inline-end: 8px;
+      z-index: 1;
+      @include transition();
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+      @include transition();
+      fill: $color-primary;
+    }
+
+    &:hover {
+      // background-color: $color-primary;
+      border: 1px solid $color-primary;
+      color: #fff;
+
+      &::before {
+        min-height: 100%;
+      }
+
+      span,
+      strong {
+        color: #fff;
+        position: relative;
+      }
+
+      svg {
+        fill: #fff;
+        position: relative;
+      }
+
+
+    }
+
+    &.active {
+      background-color: $color-primary;
+      border: 1px solid $color-primary;
+
+      &::before {
+        content: none;
+      }
+
+      svg {
+        fill: #fff;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.nav-pills li:not(:last-child) .nav-link {
+  // border-#{$end}: 1px solid $color-primary;
+  border-#{$end}: 1px solid transparent;
+}

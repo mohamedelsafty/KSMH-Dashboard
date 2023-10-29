@@ -1,0 +1,24 @@
+.table {
+ th {
+  color: $color-primary;
+ }
+
+ td {
+  color: $selection-color;
+  border-color: $color-light-text;
+  padding: 1em .5em;
+ }
+
+
+}
+
+.page-item.active .page-link {
+ z-index: 3;
+ color: #fff;
+ background-color: $color-primary;
+ border-color: $color-primary;
+}
+
+.page-link:hover {
+ color: $color-primary;
+}

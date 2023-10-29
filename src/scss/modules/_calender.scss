@@ -1,0 +1,15 @@
+.ms-acal-summary-itemrow td div {
+    height: 1.7rem !important;
+}
+
+table.ms-acal-month{
+    table-layout: fixed;
+
+    th.ms-acal-month-top{
+        background-color: #9b803d;
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,35 @@
+.main-footer {
+    padding: 2em 4em;
+    background-image: url(../images/wave-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 100%;
+    border-bottom: 15px solid $color-secondary;
+    background-position-y: bottom;
+}
+
+.main-footer__nav {
+    padding: 0;
+    list-style: none;
+    li {
+        margin-bottom: 1.8em;
+
+        a {
+            color: $footer-color;
+            font-size: 1rem;
+            @include transition;
+            &:hover {
+                color: $color-secondary;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.main-footer__logo {
+    @include transition();
+    &:hover {
+        text-decoration: none;
+        opacity: .8;
+    }
+}
